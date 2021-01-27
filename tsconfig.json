@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "importHelpers": true,
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "rules": {
+    "curly": false,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "jsx-no-lambda": false,
+    "object-literal-sort-keys": false,
+    "import-name": false,
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "check-format",
+        "allow-pascal-case"
+      ]
+    }
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/*",
+      "_templates/*",
+      "build/*"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}
